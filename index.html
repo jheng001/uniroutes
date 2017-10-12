@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -12,9 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+
+    <style>
+      .mySlides {display:none;}
+    </style>
 
   </head>
 
@@ -113,6 +119,7 @@
           </ul>
           <p>Titan Routes is a campus navigation app specifically created for Cal State Fullerton.</p>
         </div>
+
         <div class="col-lg-6">
           <img class="img-fluid rounded" src="https://i.imgur.com/zK5Usll.png" alt="">
         </div>
@@ -124,14 +131,31 @@
       <!-- Call to Action Section -->
       <div class="row mb-4">
         <div class="col-md-8">
-          <p>Titan Routes is currently only avaliable android for phones, future iOS support for apple phones will be implemented later.</p>
+          <p>Titan Routes is currently only avaliable for android phones, future iOS support for apple phones will be implemented at a later time.</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Check our Google Play Store</a>
+          <a class="btn btn-lg btn-secondary btn-block" href="portfolio-item.html">Check Out Our App Here</a>
         </div>
       </div>
 
     </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
     <!-- /.container -->
 
     <!-- Footer -->
