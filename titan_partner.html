@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>UniRoutes - Services</title>
+    <title>Uniroutes - Contact Us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
@@ -58,61 +58,49 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-5 mb-3">Services Provided</h1>
+      <h1 class="mt-5 mb-3">Titan Routes Events</h1>
 
-      <!-- Image Header -->
-      <img class="img-fluid rounded mb-4" src="https://i.imgur.com/IegQ6iu.jpg" alt="">
+     
 
-      <!-- Marketing Icons Section -->
+      
+
+      <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Classroom Navigation</h4>
-            <div class="card-body">
-              <p class="card-text">Students are able to navigate to any school building and find their classrooms.<br></br><br> For indoor classrooms, floor plans will be provided to the students to help them find their classrooms upon reaching the school building.<br></p>
+        <div class="col-lg-8 mb-4">
+          <h3>Submit your event</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
             </div>
-          
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Nearby Places Navigation</h4>
-            <div class="card-body">
-              <p class="card-text">Students are able to find any nearby school places on the map like</p>
-              <li>Food Courts</li>
-              <li>Coffee Shops</li>
-              <li>Markets</li>
-              <li>Bus Stops</li>
-              <li>Libraries</li>
-              <li>Bike Racks</li>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Event Name:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
             </div>
-           
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Class Schedule Management</h4>
-            <div class="card-body">
-              <p class="card-text">Students are given the ability to manage thier class schedules by inputting them into our app. Students can then quickly navigate to their classrooms easier.</p>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Event Time:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Friend Locator</h4>
-            <div class="card-body">
-              <p class="card-text">Students can add friends to thier app. Adding friends allows you to quickly navigate to your friends anywhere!</p>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Event Details:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
             </div>
-          </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary">Submit Event</button>
+          </form>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">School events</h4>
-            <div class="card-body">
-              <p class="card-text">Students are able to see any school events occuring anywhere and quickly navigate to them. Personal events can also be created for you and your friends!</p>
-            </div>
-          </div>
-        </div>
+
       </div>
       <!-- /.row -->
 
@@ -122,7 +110,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Uniroutes 2017</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -131,6 +119,11 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
   </body>
 
